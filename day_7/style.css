@@ -1,0 +1,16 @@
+img {
+    width:140px;
+    height:150px;
+    border-radius: 100%;
+}
+.ai {
+    position: fixed;
+    top: 250px;
+    left: 100px;
+
+}
+.city {
+    position: sticky;
+    top: 200px;
+    left: 150px;
+}
