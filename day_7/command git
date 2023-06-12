@@ -1,4 +1,0 @@
-# Daily Commands
-git add
-git commit -m "daily comment"
-git push origin master
