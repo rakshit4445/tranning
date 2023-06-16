@@ -8,6 +8,7 @@
     --blackcolor: #222222;
     --primaryfont: 'Open Sans', sans-serif;
     --navbarheight: 5rem;
+    --cursivefont: 'Pacifico', cursive;
 }
 
 /* Main CSS */
@@ -20,12 +21,23 @@ body {
     margin-right: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--primarycolor);
+}
+
+a:hover {
+    color: var(--primaryAccentcolor);
+}
+
 .navigation {
     background-color: var(--whitecolor);
     height: var(--navbarheight);
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    filter: drop-shadow(0px 3px 4px grey);
+
 
 }
 
@@ -33,7 +45,7 @@ body {
     display: flex;
     padding-left: 20px;
     width: 12rem;
-    align-items:center;
+    align-items: center;
 }
 
 .logoimage {
@@ -44,11 +56,150 @@ body {
 
 .ContactImage {
     height: 2rem;
-    padding: 8px;
+    /* padding: 8px; */
+    margin-right: 5px;
 }
+
 .menuItem {
-    flex-grow:2;
+    flex-grow: 2;
 }
+
 .menuItem {
     margin-left: 20px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    height: 450px;
+    background: linear-gradient(45deg, var(--primaryAccentcolor), var(--primarycolor));
+    /* background-color: var(--secondarycolor); */
+    filter: drop-shadow(0px 3px 4px grey);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.bannerimage {
+    height: 300px;
+    border-radius: 100%;
+}
+
+.greeting {
+    font-family: var(--cursivefont);
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.titlespan {
+    display: inline-block;
+    background-color: var(--backgroundcolor);
+    padding: 0.5rem;
+    margin: 5px 0px;
+}
+
+.description {
+    margin: 30px 0px;
+    line-height: 2rem;
+}
+
+.showcvbutton {
+    /* background-color: var(--backgroundcolor); */
+    background: linear-gradient(white, rgb(235, 235, 235), rgb(245, 245, 245));
+    padding: 10px 15px;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 3px grey);
+}
+
+.showcvbutton:hover {
+    background: linear-gradient(white, rgb(215, 215, 215));
+}
+
+.text1 {
+    border-left: .1px solid;
+    border-right: .1px solid;
+    float: right;
+    font-size: .6rem;
+}
+
+.table1 {
+    border: .1px solid;
+    height: .6rem;
+}
+
+.number.hover {
+    background: linear-gradient(white, rgb(235, 235, 235));
+}
+
+/* Services section */
+.Services {
+    margin: 5rem;
+}
+
+.Servicetext {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textsubheading {
+    color: var(--secondarycolor);
+    letter-spacing: 0.3rem;
+    font-size: 1.5rem;
+}
+
+.textheading {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.Servicecards {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.Servicecard {
+    border: 2px solid grey;
+    border-radius: 2px;
+    filter: drop-shadow(1px 1px 2px #aaaaaa);
+    margin: 15px;
+    padding: 40px;
+}
+
+.Servicecard:hover {
+    /* border: none; */
+    filter: drop-shadow(3px 3px 8px grey);
+    background-color: white;
+}
+
+.Serviceicon {
+    color: white;
+    background-color: orange;
+    padding: 15px 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 2rem;
+
+}
+
+.Serviceicon {
+    font-size: 3rem;
+    color: black;
+}
+
+.Servicetitle {
+    font-size: 1.75rem;
+    margin: 20px 0px;
+}
+
+.Servicefeature {
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+
+.Servicefeatureicon {
+    font-size: 1rem;
 }

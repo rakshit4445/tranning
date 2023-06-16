@@ -2,3 +2,5 @@
 git add
 git commit -m "daily comment"
 git push origin master
+
+git clone pathlink https://github.com/rakshit4445/tranning.git
