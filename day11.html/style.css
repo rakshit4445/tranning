@@ -4,13 +4,12 @@
     margin: auto;
     background-color: red;
     animation-name: colorChanger;
-    /* animation: colorChanger 2s infinite; */
-    animation-duration: 3s;
+    animation: colorChanger 2s infinite;
+    /* animation-duration: 3s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    border-radius: 100%;
+    animation-iteration-count: infinite; */
+    /* border-radius: 100%; */
 }
-
 @keyframes colorChanger{
     0%{
         background-color: red;
@@ -49,9 +48,9 @@
 
 }
 
-@keyframe leftwala{
+@keyframes leftwala{
     0%{
         transform:translate(0px,0px)
     }
     
-}
+} 
